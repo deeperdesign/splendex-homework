@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 70px;
+}
+.copyright {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer nav,
+.footer a {
+  color: #6a6b72;
+}
+.footer a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.built i {
+  color: #dd2d44;
+}
+.logo {
+  margin: 0 auto;
+  width: 250px;
+}
+.headerlogo {
+  width: 100%;
+}
+.container {
+  padding: 60px;
+}
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mainnav {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  flex-basis: calc(100% - 160px);
+}
+.cartcontainer {
+  width: 160px;
+  text-align: right;
+  color: #999999;
+}
+.cartcontainer i {
+  margin-left: 40px;
+  color: #333;
+}
+.mainnav > li {
+  float: left;
+  margin: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+.mainnav > li,
+.mainnav li {
+  display: block;
+}
+.mainnav > li > a:hover {
+  color: #000;
+}
+.mainnav,
+.mainnav a {
+  color: #333;
+}
+.mainnav a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mainnav .more::after {
+  display: inline-block;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+}
+.mainnav .more ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding-inline-start: 0;
+  left: 10px;
+  top: 20px;
+  background-color: #333;
+  padding: 5px 10px;
+}
+.mainnav .more a {
+  color: #fff;
+}
+.mainnav .more a:hover {
+  text-decoration: underline;
+}
+.mainnav .more:hover ul {
+  display: block;
+}
+.more li {
+  margin: 10px 0;
+}
+.item {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 40% 60%;
+  -ms-grid-columns: 40% 60%;
+}
+.imagecontainer {
+  grid-column: 1/2;
+  -ms-grid-column: 1;
+}
+.specs {
+  grid-column: 2/3;
+  -ms-grid-column: 2;
+}
+.specs h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+}
+.description {
+  color: #6d6d6d;
+}
+.price {
+  color: #6d6d6d;
+  font-weight: 700;
+  font-size: 23px;
+}
+.description p {
+  line-height: 1.5;
+  text-align: justify;
+}
+.list li {
+  margin: 5px 0;
+}
+.section {
+  margin-top: 15px;
+}
+.section .title {
+  font-weight: 700;
+}
+.colors {
+  margin-top: 40px;
+}
+.colors .title,
+.size .title {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #000;
+}
+.colors ul,
+.size ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+.colors li {
+  display: block;
+  margin-right: 10px;
+  border: 2px solid #b2b2b2;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.colors li:hover {
+  border: 2px solid red;
+}
+.colors li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  left: 2px;
+  top: 2px;
+}
+.colors .black::after {
+  background-color: #000;
+}
+.colors .yellow1::after {
+  background-color: #e5aa05;
+}
+.colors .yellow2::after {
+  background-color: #efee22;
+}
+.size li {
+  display: block;
+  margin-right: 10px;
+  border: 2px solid #b2b2b2;
+  padding: 2px 15px;
+  border-radius: 45%;
+  color: #000;
+  cursor: pointer;
+}
+.description button {
+  background-color: #808080;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 767px) {
+  .item {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-rows: auto auto;
+    -ms-grid-template-rows: auto auto;
+  }
+  .imagecontainer {
+    grid-column: 1/2;
+    -ms-grid-column: 1;
+    grid-row: 1/2;
+    -ms-grid-row: 1;
+  }
+  .specs {
+    grid-column: 1/2;
+    -ms-grid-column: 1;
+    grid-row: 2/3;
+    -ms-grid-row: 2;
+  }
+}
